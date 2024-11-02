@@ -1,0 +1,8 @@
+/home/fabi/FoodNet/build/CMakeFiles/edit_cache.dir
+/home/fabi/FoodNet/build/CMakeFiles/rebuild_cache.dir
+/home/fabi/FoodNet/build/src/CMakeFiles/core_sources.dir
+/home/fabi/FoodNet/build/src/CMakeFiles/FoodNet.dir
+/home/fabi/FoodNet/build/src/CMakeFiles/edit_cache.dir
+/home/fabi/FoodNet/build/src/CMakeFiles/rebuild_cache.dir
+/home/fabi/FoodNet/build/include/CMakeFiles/edit_cache.dir
+/home/fabi/FoodNet/build/include/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Cofetarie.dir/main.cpp.o -o Cofetarie  libcore_sources.a 

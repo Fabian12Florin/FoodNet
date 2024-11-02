@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/FoodNet.dir/main.cpp.o -o FoodNet  libcore_sources.a 
