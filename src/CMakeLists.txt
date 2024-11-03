@@ -4,6 +4,7 @@ add_library(core_sources
     Crema.cpp
     Fructe.cpp
     Ingredient.cpp
+    ComponentaCuIngrediente.cpp
 )
 
 add_executable(FoodNet main.cpp)

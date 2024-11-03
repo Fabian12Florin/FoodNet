@@ -1,7 +1,8 @@
 src/CMakeFiles/core_sources.dir/Fructe.cpp.o: \
  /home/fabi/FoodNet/src/Fructe.cpp /usr/include/stdc-predef.h \
- /home/fabi/FoodNet/include/Fructe.h /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /home/fabi/FoodNet/include/Fructe.h \
+ /home/fabi/FoodNet/include/ComponentaCuIngrediente.h \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

@@ -139,13 +139,28 @@ src/CMakeFiles/core_sources.dir/Ingredient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/core_sources.dir/Ingredient.cpp.s"
 	cd /home/fabi/FoodNet/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fabi/FoodNet/src/Ingredient.cpp -o CMakeFiles/core_sources.dir/Ingredient.cpp.s
 
+src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o: src/CMakeFiles/core_sources.dir/flags.make
+src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o: /home/fabi/FoodNet/src/ComponentaCuIngrediente.cpp
+src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o: src/CMakeFiles/core_sources.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fabi/FoodNet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o"
+	cd /home/fabi/FoodNet/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o -MF CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o.d -o CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o -c /home/fabi/FoodNet/src/ComponentaCuIngrediente.cpp
+
+src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.i"
+	cd /home/fabi/FoodNet/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fabi/FoodNet/src/ComponentaCuIngrediente.cpp > CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.i
+
+src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.s"
+	cd /home/fabi/FoodNet/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fabi/FoodNet/src/ComponentaCuIngrediente.cpp -o CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.s
+
 # Object files for target core_sources
 core_sources_OBJECTS = \
 "CMakeFiles/core_sources.dir/Prajitura.cpp.o" \
 "CMakeFiles/core_sources.dir/Blat.cpp.o" \
 "CMakeFiles/core_sources.dir/Crema.cpp.o" \
 "CMakeFiles/core_sources.dir/Fructe.cpp.o" \
-"CMakeFiles/core_sources.dir/Ingredient.cpp.o"
+"CMakeFiles/core_sources.dir/Ingredient.cpp.o" \
+"CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o"
 
 # External object files for target core_sources
 core_sources_EXTERNAL_OBJECTS =
@@ -155,9 +170,10 @@ src/libcore_sources.a: src/CMakeFiles/core_sources.dir/Blat.cpp.o
 src/libcore_sources.a: src/CMakeFiles/core_sources.dir/Crema.cpp.o
 src/libcore_sources.a: src/CMakeFiles/core_sources.dir/Fructe.cpp.o
 src/libcore_sources.a: src/CMakeFiles/core_sources.dir/Ingredient.cpp.o
+src/libcore_sources.a: src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o
 src/libcore_sources.a: src/CMakeFiles/core_sources.dir/build.make
 src/libcore_sources.a: src/CMakeFiles/core_sources.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fabi/FoodNet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libcore_sources.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fabi/FoodNet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libcore_sources.a"
 	cd /home/fabi/FoodNet/build/src && $(CMAKE_COMMAND) -P CMakeFiles/core_sources.dir/cmake_clean_target.cmake
 	cd /home/fabi/FoodNet/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/core_sources.dir/link.txt --verbose=$(VERBOSE)
 

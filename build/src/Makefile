@@ -168,6 +168,30 @@ Blat.cpp.s:
 	cd /home/fabi/FoodNet/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/core_sources.dir/build.make src/CMakeFiles/core_sources.dir/Blat.cpp.s
 .PHONY : Blat.cpp.s
 
+ComponentaCuIngrediente.o: ComponentaCuIngrediente.cpp.o
+.PHONY : ComponentaCuIngrediente.o
+
+# target to build an object file
+ComponentaCuIngrediente.cpp.o:
+	cd /home/fabi/FoodNet/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/core_sources.dir/build.make src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o
+.PHONY : ComponentaCuIngrediente.cpp.o
+
+ComponentaCuIngrediente.i: ComponentaCuIngrediente.cpp.i
+.PHONY : ComponentaCuIngrediente.i
+
+# target to preprocess a source file
+ComponentaCuIngrediente.cpp.i:
+	cd /home/fabi/FoodNet/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/core_sources.dir/build.make src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.i
+.PHONY : ComponentaCuIngrediente.cpp.i
+
+ComponentaCuIngrediente.s: ComponentaCuIngrediente.cpp.s
+.PHONY : ComponentaCuIngrediente.s
+
+# target to generate assembly for a file
+ComponentaCuIngrediente.cpp.s:
+	cd /home/fabi/FoodNet/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/core_sources.dir/build.make src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.s
+.PHONY : ComponentaCuIngrediente.cpp.s
+
 Crema.o: Crema.cpp.o
 .PHONY : Crema.o
 
@@ -301,6 +325,9 @@ help:
 	@echo "... Blat.o"
 	@echo "... Blat.i"
 	@echo "... Blat.s"
+	@echo "... ComponentaCuIngrediente.o"
+	@echo "... ComponentaCuIngrediente.i"
+	@echo "... ComponentaCuIngrediente.s"
 	@echo "... Crema.o"
 	@echo "... Crema.i"
 	@echo "... Crema.s"

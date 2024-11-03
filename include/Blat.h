@@ -1,16 +1,13 @@
 #pragma once
-#include <vector>
-#include "Ingredient.h"
+#include "ComponentaCuIngrediente.h"
 
-class Blat {
-private:
-    std::vector<Ingredient*> ingrediente;
-
+class Blat : public ComponentaCuIngrediente {
 public:
-    Blat();
-    ~Blat();
-    Blat(const Blat& other);
+    Blat() = default;
+    Blat(const Blat& other) : ComponentaCuIngrediente(other) {}
 
-    void adaugaIngredient(const Ingredient& ingredient);
-    void afiseazaBlat() const;
+    void afiseazaIngrediente() const override {
+        std::cout << "Ingrediente Blat:" << std::endl;
+        ComponentaCuIngrediente::afiseazaIngrediente();
+    }
 };

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/core_sources.dir/Blat.cpp.o"
   "CMakeFiles/core_sources.dir/Blat.cpp.o.d"
+  "CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o"
+  "CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o.d"
   "CMakeFiles/core_sources.dir/Crema.cpp.o"
   "CMakeFiles/core_sources.dir/Crema.cpp.o.d"
   "CMakeFiles/core_sources.dir/Fructe.cpp.o"

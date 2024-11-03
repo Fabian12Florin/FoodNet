@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/fabi/FoodNet/src/Blat.cpp" "src/CMakeFiles/core_sources.dir/Blat.cpp.o" "gcc" "src/CMakeFiles/core_sources.dir/Blat.cpp.o.d"
+  "/home/fabi/FoodNet/src/ComponentaCuIngrediente.cpp" "src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o" "gcc" "src/CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o.d"
   "/home/fabi/FoodNet/src/Crema.cpp" "src/CMakeFiles/core_sources.dir/Crema.cpp.o" "gcc" "src/CMakeFiles/core_sources.dir/Crema.cpp.o.d"
   "/home/fabi/FoodNet/src/Fructe.cpp" "src/CMakeFiles/core_sources.dir/Fructe.cpp.o" "gcc" "src/CMakeFiles/core_sources.dir/Fructe.cpp.o.d"
   "/home/fabi/FoodNet/src/Ingredient.cpp" "src/CMakeFiles/core_sources.dir/Ingredient.cpp.o" "gcc" "src/CMakeFiles/core_sources.dir/Ingredient.cpp.o.d"

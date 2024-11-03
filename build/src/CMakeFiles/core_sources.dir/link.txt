@@ -1,2 +1,2 @@
-/usr/bin/ar qc libcore_sources.a CMakeFiles/core_sources.dir/Prajitura.cpp.o CMakeFiles/core_sources.dir/Blat.cpp.o CMakeFiles/core_sources.dir/Crema.cpp.o CMakeFiles/core_sources.dir/Fructe.cpp.o CMakeFiles/core_sources.dir/Ingredient.cpp.o
+/usr/bin/ar qc libcore_sources.a CMakeFiles/core_sources.dir/Prajitura.cpp.o CMakeFiles/core_sources.dir/Blat.cpp.o CMakeFiles/core_sources.dir/Crema.cpp.o CMakeFiles/core_sources.dir/Fructe.cpp.o CMakeFiles/core_sources.dir/Ingredient.cpp.o CMakeFiles/core_sources.dir/ComponentaCuIngrediente.cpp.o
 /usr/bin/ranlib libcore_sources.a

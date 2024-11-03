@@ -1,7 +1,8 @@
 src/CMakeFiles/core_sources.dir/Crema.cpp.o: \
  /home/fabi/FoodNet/src/Crema.cpp /usr/include/stdc-predef.h \
- /home/fabi/FoodNet/include/Crema.h /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /home/fabi/FoodNet/include/Crema.h \
+ /home/fabi/FoodNet/include/ComponentaCuIngrediente.h \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
