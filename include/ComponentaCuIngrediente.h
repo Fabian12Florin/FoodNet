@@ -11,7 +11,9 @@ public:
     ComponentaCuIngrediente() = default; // Constructor implicit
     // Folosim const ca sa nu modificam obiectul other pe care il primim ca referinta
     ComponentaCuIngrediente(const ComponentaCuIngrediente& other);  // Copy constructor
-        virtual ~ComponentaCuIngrediente(); // Eliberare memorie, metoda abstracta
+    virtual ~ComponentaCuIngrediente(); // Eliberare memorie, metoda abstracta
+    ComponentaCuIngrediente(ComponentaCuIngrediente&& other) noexcept; // Move constructor
+
 
     ComponentaCuIngrediente& operator=(const ComponentaCuIngrediente& other);  // Operator de atribuire =
     ComponentaCuIngrediente& operator+(const Ingredient& ingredient);          // Operatorul + pentru adăugare

@@ -7,7 +7,9 @@
 // 3. Membrii sunt initializati direct cu valorile furnizate în lista de initializare, altfel
 //    se intializa un obiect gol iar apoi se facea atribuirea
 Ingredient::Ingredient(const std::string& nume, double cantitate, const std::string& unitate)
-    : nume(nume), cantitate(cantitate), unitate(unitate) {}
+    : nume(nume), cantitate(cantitate), unitate(unitate) {
+        std::cout << "Ingredient creat: " << nume << std::endl;
+    }
 
 // const pentru a ne asigura ca nu modificam starea obiectului. Ne asiguram ca putem apela
 // metodele si pe obiecte constante

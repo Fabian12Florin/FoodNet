@@ -6,6 +6,7 @@ ComponentaCuIngrediente::ComponentaCuIngrediente(const ComponentaCuIngrediente& 
         // prin new Ingredient(*ingredient) se apeleaza un copy constructor implicit generat automat,
         // clasa Ingredient nu are definit unul explicit
     }
+    std::cout << "Copy constructor ComponentaCuIngrediente. Nr ingrediente : "  << other.ingrediente.size() << std::endl;
 }
 
 ComponentaCuIngrediente::~ComponentaCuIngrediente() {
@@ -16,6 +17,17 @@ ComponentaCuIngrediente::~ComponentaCuIngrediente() {
     }
     std::cout << std::endl;
     ingrediente.clear();
+}
+
+// Move constructor
+ComponentaCuIngrediente::ComponentaCuIngrediente(ComponentaCuIngrediente&& other) noexcept {
+    // Mutam resursele (ingredientele) din obiectul sursa
+    ingrediente = std::move(other.ingrediente);
+
+    // Resetam obiectul sursa pentru a nu elibera memoria duplicat
+    other.ingrediente.clear();
+
+    std::cout << "Move constructor apelat pentru ComponentaCuIngrediente." << std::endl;
 }
 
 ComponentaCuIngrediente& ComponentaCuIngrediente::operator=(const ComponentaCuIngrediente& other) {
@@ -33,10 +45,19 @@ ComponentaCuIngrediente& ComponentaCuIngrediente::operator=(const ComponentaCuIn
 
 ComponentaCuIngrediente& ComponentaCuIngrediente::operator+(const Ingredient& ingredient) {
     ingrediente.push_back(new Ingredient(ingredient));
+    std::cout << "Ingredient adăugat folosind operatorul +: " 
+              << ingredient.getNume() << " (" << ingredient.getCantitate() 
+              << " " << ingredient.getUnitate() << ")" << std::endl;
     return *this;
 }
 
 void ComponentaCuIngrediente::afiseazaIngrediente() const {
+    if (ingrediente.empty()) { // Verificam daca vectorul este gol
+        std::cout << "Nu există ingrediente." << std::endl;
+        return;
+    }
+
+    // Afisam fiecare ingredient
     for (const auto& ingredient : ingrediente) {
         ingredient->afiseazaIngredient();
     }

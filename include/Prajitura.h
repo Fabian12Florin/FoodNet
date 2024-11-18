@@ -20,6 +20,13 @@ public:
     // daca el nu este folosit atunci, pentru siguranta, o sa se foloseasca copy constructor
     Prajitura(Prajitura&& other) noexcept;         // Move constructor
 
+    // Suprascriere operator +, dar il blocam
+    Prajitura operator+(const Prajitura& other) = delete;
+
+    /*
+    Prajitura(const Prajitura&) = delete;  // Blochezi copy constructorul
+    */
+
     Blat* getBlat() const;       // Accesare Blat
     Crema* getCrema() const;     // Accesare Crema
     Fructe* getFructe() const;   // Accesare Fructe
