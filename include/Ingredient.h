@@ -1,3 +1,4 @@
+// pragma once previne includerea multipla a unui fisier header in timpul compilarii
 #pragma once
 #include <string>
 

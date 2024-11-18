@@ -16,6 +16,9 @@ public:
     Prajitura(const Prajitura& other);             // Copy constructor
     Prajitura& operator=(const Prajitura& other);  // Operator de atribuire
     ~Prajitura();                                  // Destructor
+    // noexcept spune compilatorului ca move constructorul nu va arunca exceptii;
+    // daca el nu este folosit atunci, pentru siguranta, o sa se foloseasca copy constructor
+    Prajitura(Prajitura&& other) noexcept;         // Move constructor
 
     Blat* getBlat() const;       // Accesare Blat
     Crema* getCrema() const;     // Accesare Crema

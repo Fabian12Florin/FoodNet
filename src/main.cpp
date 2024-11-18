@@ -4,6 +4,7 @@
 #include "Fructe.h"
 #include "Ingredient.h"
 #include <iostream>
+#include <utility> // pentru std::move
 
 int main() {
     // Creăm un obiect Blat și adăugăm ingrediente folosind operatorul +
@@ -25,6 +26,14 @@ int main() {
     blatAtribuire.afiseazaIngrediente();
     std::cout << std::endl;
 
+    // Demonstrăm utilizarea move constructorului pentru Blat
+    Blat blatMutat = std::move(blat); // Mutăm resursele din blat în blatMutat
+    blatMutat.afiseazaIngrediente();
+    std::cout << "După mutare, blat: ";
+    blat.afiseazaIngrediente(); // blat ar trebui să fie gol după mutare
+    std::cout << std::endl;
+
+    // Creăm crema și fructele
     Crema crema;
     crema + Ingredient("Lapte", 300, "ml") + Ingredient("Frisca", 200, "ml");
     crema.afiseazaIngrediente();
@@ -35,7 +44,7 @@ int main() {
     std::cout << std::endl;
 
     // Creăm o prăjitură folosind Blat, Crema și Fructe
-    Prajitura tort("Tort de Ciocolată", blat, crema, fructe);
+    Prajitura tort("Tort de Ciocolată", blatMutat, crema, fructe);
     tort.afiseazaPrajitura();
 
     std::cout << std::endl;
@@ -43,6 +52,13 @@ int main() {
     // Creăm o copie a prăjiturii folosind copy constructor
     Prajitura tortCopie = tort;
     tortCopie.afiseazaPrajitura();
+    std::cout << std::endl;
+
+    // Demonstrăm utilizarea move constructorului pentru Prajitura
+    Prajitura tortMutat = std::move(tort); // Mutăm resursele din tort în tortMutat
+    tortMutat.afiseazaPrajitura();
+    std::cout << "După mutare, tort: ";
+    tort.afiseazaPrajitura(); // tort ar trebui să fie gol după mutare
 
     return 0;
 }

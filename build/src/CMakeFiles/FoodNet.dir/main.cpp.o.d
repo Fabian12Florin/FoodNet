@@ -157,4 +157,5 @@ src/CMakeFiles/FoodNet.dir/main.cpp.o: /home/fabi/FoodNet/src/main.cpp \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc /home/fabi/FoodNet/include/Crema.h \
- /home/fabi/FoodNet/include/Fructe.h
+ /home/fabi/FoodNet/include/Fructe.h /usr/include/c++/13/utility \
+ /usr/include/c++/13/bits/stl_relops.h
