@@ -1,22 +1,23 @@
 #pragma once
 #include <vector>
-#include "Ingredient.h"
+#include <memory>
+#include <mutex>
 #include <iostream>
+#include "Ingredient.h"
 
 class ComponentaCuIngrediente {
 protected:
-    std::vector<Ingredient*> ingrediente;
+    std::vector<std::shared_ptr<Ingredient>> ingrediente; // Vector de shared_ptr pentru ingrediente
+    mutable std::mutex mtx;
 
 public:
     ComponentaCuIngrediente() = default; // Constructor implicit
-    // Folosim const ca sa nu modificam obiectul other pe care il primim ca referinta
-    ComponentaCuIngrediente(const ComponentaCuIngrediente& other);  // Copy constructor
-    virtual ~ComponentaCuIngrediente(); // Eliberare memorie, metoda abstracta
-    ComponentaCuIngrediente(ComponentaCuIngrediente&& other) noexcept; // Move constructor
+    ComponentaCuIngrediente(const ComponentaCuIngrediente&) = delete;            // Copy constructor dezactivat
+    ComponentaCuIngrediente& operator=(const ComponentaCuIngrediente&) = delete; // Operator de atribuire dezactivat
+    ComponentaCuIngrediente(ComponentaCuIngrediente&&) noexcept = default;       // Move constructor implicit
+    ComponentaCuIngrediente& operator=(ComponentaCuIngrediente&&) noexcept = default; // Move assignment operator
+    virtual ~ComponentaCuIngrediente() = default;                                // Destructor implicit
 
-
-    ComponentaCuIngrediente& operator=(const ComponentaCuIngrediente& other);  // Operator de atribuire =
-    ComponentaCuIngrediente& operator+(const Ingredient& ingredient);          // Operatorul + pentru adăugare
-
+    ComponentaCuIngrediente& operator+(const std::shared_ptr<Ingredient>& ingredient); // Adaugare ingredient
     virtual void afiseazaIngrediente() const;  // Metodă de afișare a ingredientelor
 };
